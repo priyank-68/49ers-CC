@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>49ers Cricket Connect</title>
+	<link rel="stylesheet" type="text/css" href="../assests/css/index.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+
+	<div class="homepage">
+	 <div class="home_content">
+	  <div class="opa_div signup">
+	  </div>
+    <form class="main_div signup" method="POST" action="signup">
+       <label for = "userID"> UserID </label>
+       <input type = "text" name= "userID" id="userID" value= "" >
+       <br>
+       <label for = "firstName"> FirstName </label>
+       <input type = "text" name= "firstName" id="firstName" value= "">
+       <br>
+       <label for = "lastName"> LastName </label>
+       <input type = "text" name= "lastName" id="lastName" value= "">
+       <br>
+       <label for = "emailAddress"> Email </label>
+       <input type = "text" name= "emailAddress" id="emailAddress" value= "">
+       <br>
+       <label for = "password"> Password </label>
+       <input type = "text" name= "password" id="password" value= "">
+       <br>
+       <label for = "address1Field"> AddressField1 </label>
+       <input type = "text" name= "address1Field" id="address1Field" value= "">
+       <br>
+       <label for = "address2Field"> AddressField2 </label>
+       <input type = "text" name= "address2Field" id="address2Field" value= "">
+       <br>
+       <label for = "city"> City </label>
+       <input type = "text" name= "city" id="city" value= "">
+       <br>
+       <label for = "state"> State </label>
+       <input type = "text" name= "state" id="state" value= "">
+       <br>
+       <label for = "postCode"> Postcode </label>
+       <input type = "text" name= "postCode" id="postCode" value= "">
+       <br>
+       <label for = "country"> Country </label>
+       <input type = "text" name= "country" id="country" value= "">
+       <br>
+       <input type = "submit" value= "Register" />
+               </form>
+	</div>
+</div>
+<% include partials/footer.ejs %>
+
+ </body>
+</html>

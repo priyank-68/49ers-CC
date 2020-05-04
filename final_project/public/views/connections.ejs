@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>49ers Cricket Connect</title>
+	<link rel="stylesheet" type="text/css" href="../assests/css/index.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+	<div class="Connections-page">
+	<div class="Connections-content">
+	<div class="opa_div cons">
+	</div>
+        <div class="content">
+	   <div class="subcontent">
+	    <div>
+
+         <%data.types.forEach(function(category){%>
+           <!-- using for loop to fetch categories -->
+         <h3><%= category %></h3>
+         <hr>
+         <%data.connections.forEach(function(x){%>
+           <!-- using for loop to fetch connections -->
+           <%if(x.connectionTopic == category){%>
+               <a class=sub href="/connection?connectionId=<%=x.connectionID %>"><%= x.connectionName %></a><br>
+           <%}});%>
+         <%});%>
+	    </div>
+	  </div>
+	</div>
+	</div>
+	</div>
+<% include partials/footer.ejs %>
+
+  </body>
+</html>

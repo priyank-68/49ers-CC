@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>49ers Cricket Connect</title>
+	<link rel="stylesheet" type="text/css" href="../assests/css/index.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+
+	<div class="homepage">
+	 <div class="home_content">
+	  <div class="opa_div unewcon"> 
+	   </div>
+    <form id="connection-form" method="POST" action="updatednewConnection?ID=<%=data[0].connectionID %>&userId=<%=data[0].userId %>">
+
+         <label for="ID"> Connection ID:</label>
+         <input type = "text" name= "ID" id="ID" value= "<%=data[0].connectionID%>" >
+         <br>
+         <label for="userId">UserID: </label>
+         <input type = "text" name= "userId" id="userId" value= "<%=data[0].userId%>" >
+         <br>
+         <label for = "topic"> Topic </label>
+         <input type = "text" name= "topic" id="topic" value= "<%=data[0].connectionTopic%>" >
+         <br>
+         <label for = "name"> Name </label>
+         <input type = "text" name= "name" id="name" value= "<%=data[0].connectionName%>">
+         <br>
+         <label for = "details"> Details </label>
+         <input type = "text" name= "details" id="details" value= "<%=data[0].Details%>">
+         <br>
+         <label for = "location"> Where </label>
+         <input type = "text" name= "location" id="location" value= "<%=data[0].Location%>">
+         <br>
+         <label for = "time"> Time </label>
+         <input type = "time" name= "time" id="time" value= "<%=data[0].Time%>">
+         <br>
+         <label for = "date"> Date </label>
+         <input type = "date" name= "date" id="date" value= "<%=data[0].Date%>">
+         <br>
+         <input type = "submit" value= "Update connection" />
+      </form>
+     </div>
+ 	 </div>
+<% include partials/footer.ejs %>
+
+ </body>
+</html>

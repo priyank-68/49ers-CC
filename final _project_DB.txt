@@ -1,0 +1,156 @@
+db.dropDatabase();
+use cricket;
+
+db.createCollection("connections")
+db.createCollection("userconnections")
+db.createCollection("users")
+
+db.connections.insert([{
+                  "connectionID": '1',
+                  "userId":"default",
+                  "connectionTopic": 'Play' ,
+                  "connectionName": '15 Overs',
+                  "Details": 'Quickest of it all.Going to work on weekends this kind of play is right for you.Play and head back to office',
+                  "Date": '27-10-2019' ,
+                  "Time":'7am',
+                  "Location":'Reedy Creek',
+                  "imageURL":'../assests/images/rohitsharma.png'
+    },{
+        "connectionID": '2',
+        "userId":"default",
+        "connectionTopic": 'Play' ,
+        "connectionName": '20 Overs',
+        "Details": 'On going trend format.Started way back in 2004 t-20 is still running in the blood of the youngsters.Give a chance to yourself',
+        "Date": '28-10-2019',
+        "Time":'8am',
+        "Location":'Reedy Creek',
+        "imageURL":'../assests/images/virat.jpg'
+
+    },{
+       "connectionID": '3',
+       "userId":"default",
+       "connectionTopic": 'Play' ,
+       "connectionName": '35 Overs',
+       "Details": 'Longest format in our events.This is what we call proper cricket format.Tests your tenchique and paitence.',
+       "Date": '7-11-2019',
+       "Time":'10 am',
+       "Location":'Reedy Creek',
+       "imageURL":'../assests/images/shikar.jpg'
+   },{
+      "connectionID": '4',
+      "userId":"default",
+      "connectionTopic": 'Discuss' ,
+      "connectionName": 'Day And Night Test Cricket',
+      "Details": 'the effects of light on the red ball in test cricket',
+      "Date": '27-10-2019' ,
+      "Time":'4pm',
+      "Location":'Robertson park',
+      "imageURL":'../assests/images/dhoni.jpg'
+   },{
+      "connectionID": '5',
+      "userId":"default",
+      "connectionTopic": 'Discuss' ,
+      "connectionName": 'Rules Favouring Batting Impact On Bowling',
+      "Details": 'Domination of bat over ball and impact on spin bowlers ',
+      "Date": '28-10-2019' ,
+      "Time":'5pm',
+      "Location":'Robertson park',
+      "imageURL":'../assests/images/pant.jpg'
+   },{
+      "connectionID": '6',
+      "userId":"default",
+      "connectionTopic": 'Discuss' ,
+      "connectionName": 'Pink Ball Cricket',
+      "Details": 'Differences between Red ball, White ball and Pink ball',
+      "Date": '29-10-2019' ,
+      "Time":'4pm',
+      "Location":'Robertson park',
+      "imageURL":'../assests/images/hardhik.jpg'
+   },{
+      "connectionID": '7',
+      "userId":"default",
+      "connectionTopic": 'Watch' ,
+      "connectionName": 'Domestic T-20 Leagues',
+      "Details": 'Watch IPl,BBl and other domestic leagues all over the world',
+      "Date": '10-11-2019' ,
+      "Time":'1pm',
+      "Location":'Flying saucer',
+      "imageURL":'../assests/images/kuldeep.jpg'
+  },{
+     "connectionID": '8',
+     "userId":"default",
+     "connectionTopic": 'Watch' ,
+     "connectionName": 'International Matches',
+     "Details":'Watch Countries play head on head in the international feast',
+     "Date": '11-11-2019' ,
+     "Time":'1pm',
+     "Location":'Flying saucer',
+     "imageURL":'../assests/images/bhuvi.jpg'
+ },{
+    "connectionID": '9',
+    "userId":"default",
+    "connectionTopic": 'Watch' ,
+    "connectionName": 'Women Cricket Worldcup',
+    "Details": 'Watch the ladies throwing there charm all over the sport',
+    "Date": '15-11-2019' ,
+    "Time":'1pm',
+    "Location":'Flying saucer',
+    "imageURL":'../assests/images/bumrahjpg.jpg'
+}]);
+
+db.userconnections.insert([
+{
+"userID" :'priyank12',
+"connectionID": '1',
+"rsvp":'yes'
+},
+{
+"userID" :'priyank12', 
+"connectionID": '9',
+"rsvp":'no'
+},
+{
+"userID" :'visesh97',
+"connectionID": '2',
+"rsvp":'maybe'
+},
+{
+"userID" :'visesh97',
+"connectionID": '6',
+"rsvp":'yes'
+}
+]);	
+
+db.users.insert([{
+    "userID":'priyank12',
+    "firstName":'Priyank',
+    "lastName":'Aenugula',
+    "emailAddress":'paenugul@uncc.edu',
+    "salt": "fdfa31cfd0ae307d9f514ad02d576e2a",
+    "hash": "8ead1c340353be5e36495bc4ce24ff04afa56fe6658e362b7c16b1fdcc02f722f2a606a7b0c9b5cff6df0cd570721fc3e8c916b60df928e4ee2e79a7a80f8b5f",
+    "address1Field":'216',
+    "address2Field":'barton creek drive',
+    "city":'charlotte',
+    "state":'north carolina',
+    "postCode":'28262',
+    "country":'USA'
+  },	
+
+  {
+    "userID":'visesh97',
+    "firstName":'visesh reddy',
+    "lastName":'kampally',
+    "emailAddress":'vkampall@uncc.edu',
+    "salt": "fdfa31cfd0ae307d9f514ad02d576e2a",
+    "hash": "8ead1c340353be5e36495bc4ce24ff04afa56fe6658e362b7c16b1fdcc02f722f2a606a7b0c9b5cff6df0cd570721fc3e8c916b60df928e4ee2e79a7a80f8b5f",
+    "address1Field":'224',
+    "address2Field":'barton creek drive',
+    "city":'charlotte',
+    "state":'north carolina',
+    "postCode":'28262',
+    "country":'USA'
+  }]);
+
+username:paenugul@uncc.edu
+password:Ektara123
+

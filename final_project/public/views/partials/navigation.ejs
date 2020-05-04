@@ -1,0 +1,32 @@
+<header class="tab">
+   <nav>
+  <%if(user){%>
+<a href="index"> <img class= "logo" alt="cricket" src="../assests/images/images.png"> </a>
+<div class="references">
+
+<a href="newConnection">New Connection</a>
+<a href="savedConnections">Myconnections</a>
+<a href="signout">LOGOUT</a>
+
+  </div>
+  <div class="sitenav">
+   <a href="connections">Connections</a>
+   <a class="user-name">Welcome <%= user.firstName%></a>
+</div>
+
+
+
+<%}else{%>
+  <a href="index"> <img class= "logo" alt="cricket" src="../assests/images/images.png"> </a>
+  <div class="references">
+  <a href="newConnection">NewConnection</a>
+  <a href="/signup">SignUp</a>
+  <a href="/login">Login</a>
+    </div>
+    <div class="sitenav">
+     <a href="connections">Connections</a>
+  </div>
+
+  <%}%>
+</nav>
+</header>

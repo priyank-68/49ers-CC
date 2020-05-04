@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+html, body, h1, h2, ul,li ,a , p,
+article, aside, footer, header, main, nav, section {
+	padding: 0;
+	margin: 0;
+}
+
+.tab {
+	background-color: #000000;
+	color: white;
+	padding: 10px;
+	height:50px;
+	font-size:20px;
+}
+.references a {
+	padding-top:20px;
+}
+.logo{
+	height: 50px;
+	width: 60px;
+}
+
+.sitenav {
+	background-color: #6F6E6E ;
+	color: white;
+	padding: 10px 10px;
+	height:20px;
+	font-size:20px;
+	text-shadow: -4px 3px black;
+}
+
+body {
+	background-color: #DEF5DF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	background-image:url('../images/ground2.jpg');
+	background-size:cover;
+}
+
+ .references{
+	float: right;
+	color: white;
+	    padding: 10px;
+	 }
+
+.hcontent{
+	font-size: 20px;
+}
+ .content{
+    min-height: 100px;
+	overflow:hidden;
+    width: 700px;
+	color:white;
+	clear:both;
+    position: relative;
+	padding: 10px 10px;
+}
+.content p{
+	text-align: center;
+	font-size: 20px;
+}
+.homepage ,.Connections-page,.conn-page{
+    padding-top: 100px;
+    margin-left: 25%;
+    position: relative;
+		min-height: 450px;
+}
+.Connections-page{padding-top:50px;}
+.home_content ,.Connections-content,.connection-detail{
+    width: 700px;
+    position: relative;
+}
+ .contentdetail{
+    min-height: 100px;
+	overflow:hidden;
+	color:white;
+	clear:both;
+	font-size:20px;
+	position:relative;
+	width:750px;
+}
+
+.subcontent{
+	display:block;
+	font-size:18px;
+	padding: 6px 94px;
+	line-height:175%;
+}
+
+.subcontent h1{
+	text-decoration:underline;
+    margin-bottom: 20px;
+}
+ .heading{
+	padding-bottom: 10px;
+}
+.heading1{
+	text-align: center;
+}
+
+
+ a{
+	color:white;
+	padding-right : 30px;
+	text-decoration : none;
+}
+
+.conec_details{
+	float: right;
+}
+.event{
+	text-align:center;
+	text-decoration:underline;
+}
+
+
+footer{
+	background-color: #000000;
+	padding: 10px 0px;
+	clear: both;
+	/*position: fixed;*/
+	 top: 600px;
+	font-size:20px;
+	width:100%;
+	text-align: center;
+}
+
+table, th, td {
+  padding: 10px;
+}
+
+.connectionform{
+	text-align:center;
+	color:white;
+	position: relative;
+}
+form.main_div{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.opa_div.newcons {
+    height: 260px;
+}
+
+.opa_div.about{
+	 height: 200px;
+	 width: 700px;
+
+}
+.opa_div.savcon {
+    height: 400px;
+}
+.opa_div.signup {
+    height: 500px;
+}
+.main_div.signup{
+
+}
+.connectionform label,input{
+  margin: 10px 20px;
+}
+table {border-collapse: collapse;width: 100%;}
+
+.table{
+    padding-top: 10px;
+}
+img {
+	max-width: 100%;
+    margin-left: 5px;
+	}
+img.thumbnail {
+	width: 70px;
+	margin:0;
+	}
+.conec_details p {
+    font-size: 20px;
+		font-weight: bold;
+		padding-left: 0px;
+     }
+.left_content{
+	width:50%;
+	}
+.hostimage{
+	width:80px;
+	height:80px;
+}
+.right {
+    position: absolute;
+    right: 8%;
+    top: 30%;
+		color:white;
+     }
+.conec_img {
+    float: left;
+     }
+.conec_details {
+    float: right;
+    width: 80%;
+     }
+
+.details_div{
+	clear:both;
+    width:90%;
+		color:white;
+		position: relative;
+	}
+
+.details_div p{
+	font-size: 20px;
+	color:white;
+}
+
+.opa_div {
+    background: black;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    width: 700px;
+    opacity: .5;
+}
+.opa_div.unewcon{height:420px;}
+form#connection-form {position: relative;color: white; padding-left: 30%;}
+.opa_div.cons{
+	height:615px;
+	}
+.connection-detail .opa_div{
+	height:300px;
+	width:750px;
+	}
+
+.user-name{
+	float: right;
+}

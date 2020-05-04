@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>49ers Cricket Connect</title>
+	<link rel="stylesheet" type="text/css" href="../assests/css/index.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+	<div class="homepage">
+	 <div class="home_content">
+	  <div class="opa_div newcons">
+	  </div>
+   <form class= "connectionform" method="POST" action="newConnection">
+
+      <label for = "topic"> Topic </label>
+      <input type = "text" name= "topic" id="topic" value= "" >
+      <br>
+      <label for = "name"> Name </label>
+      <input type = "text" name= "name" id="name" value= "">
+      <br>
+      <label for = "description"> Details </label>
+      <input type = "text" name= "details" id="description" value= "">
+      <br>
+      <label for = "location"> Where </label>
+      <input type = "text" name= "location" id="location" value= "">
+      <br>
+      <label for = "time"> Time </label>
+      <input type = "time" name= "time" id="time" value= "">
+      <br>
+      <label for = "date"> Date </label>
+      <input type = "date" name= "date" id="date" value= "">
+      <br>
+      <input type = "submit" value= "Create connection" />
+   </form>
+ </div>
+</div>
+<% include partials/footer.ejs %>
+
+ </body>
+</html>

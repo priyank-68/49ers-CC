@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>49ers Cricket Connect</title>
+	<link rel="stylesheet" type="text/css" href="../assests/css/index.css">
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+
+	<div class="homepage">
+	 <div class="home_content">
+	  <div class="opa_div">
+	  </div>
+    <form class="main_div" method="POST" action="login">
+      <p>Login to your Profile </p>
+
+          <p><%=alert%> </p>
+          <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input id="password" type="password" name="password">
+        </div>
+          <br><button>Submit</button>
+               </form>
+	</div>
+</div>
+<% include partials/footer.ejs %>
+
+ </body>
+</html>
